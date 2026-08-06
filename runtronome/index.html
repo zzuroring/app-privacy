@@ -12,29 +12,45 @@
   .meta { color: #7a7095; font-size: .9rem; }
   a { color: #6a4fb0; }
   hr { border: none; border-top: 1px solid #e3dcf0; margin: 48px 0; }
+  ul { padding-left: 1.3em; }
+  li { margin: .4em 0; }
   code { background: #efe9fb; padding: 1px 5px; border-radius: 4px; }
 </style>
 </head>
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="meta">Runtronome &middot; Last updated: July 18, 2026</p>
+<p class="meta">Runtronome &middot; Last updated: August 7, 2026</p>
 
 <p>This Privacy Policy explains how the <strong>Runtronome</strong> app ("the app")
 handles information. Runtronome is a free, ad-supported running-cadence app for Android
 phones and Wear OS watches. There is no account, no sign-up, and no login.</p>
 
 <h2>Information the app collects</h2>
-<p>The app does <strong>not</strong> collect, upload, or transmit personal running data
-to the developer. Your target cadence, settings, and recorded cadence sessions are stored
-<strong>only on your device</strong> and, if you use a paired watch, exchanged directly
-between your phone and watch. They are never sent to us or to a server we control. The app
-does not request location permission and does not record GPS routes or distance.</p>
+<p>There is no account and <strong>the developer never receives your running data</strong>.
+Your target cadence, settings, and recorded cadence sessions are created and stored on your
+device. The app does not request location permission and does not record GPS routes or
+distance.</p>
+<p>There are two cases where that data leaves your device. In neither case does it come to
+us:</p>
+<ul>
+<li><strong>Your paired watch.</strong> If you use a paired Wear OS watch, the run
+configuration and the live run state are exchanged directly between your phone and watch
+through Google Play services, so both can show the same run.</li>
+<li><strong>Android backup.</strong> If you have Android's backup turned on, your settings
+and your run-history database are included in the backup held in your own Google account, so
+your history comes back when you set up a new phone. You control that backup from your
+device's settings. The watch app itself backs up nothing.</li>
+</ul>
 
-<h2>Motion sensors</h2>
+<h2>Motion sensors and physical activity</h2>
 <p>To measure your running cadence (steps per minute), the app reads your device's motion
-sensors (such as the accelerometer). This sensor data is processed on your device in real
-time and is not stored or transmitted as personal information.</p>
+sensors — the accelerometer, and the system step detector where available. Using the step
+detector requires Android's <strong>physical activity</strong> permission, which the app asks
+for when you start a run with the step-detector method selected or with method comparison
+turned on; the accelerometer method needs no permission.
+This sensor data is processed on your device in real time. Only the resulting cadence figures
+are saved into your run history, and the raw sensor readings are not stored or transmitted.</p>
 
 <h2>Advertising</h2>
 <p>The app shows advertisements using <strong>Google AdMob</strong>: a banner (outside of an
@@ -43,7 +59,11 @@ to watch to remove ads for 7 days. Ads are never shown while you are running. To
 Google's Mobile Ads SDK may collect and process certain data, such as device identifiers and
 approximate (non-precise) location, in accordance with Google's policies. This data is handled
 by Google, not by the developer of this app. The rewarded ad is entirely optional and the app
-is fully usable without ever watching one.</p>
+is fully usable without ever watching one. Where required (for example in the European
+Economic Area and the UK), the app asks for your consent before any ads load. In that consent
+dialog, "use precise geolocation data" is offered as a separate choice. It is switched
+<strong>off</strong> by default and applies only if you turn it on yourself. Where that
+consent applies, the app's settings screen offers an entry to reopen those choices later.</p>
 <p>You can learn how Google uses this information here:
 <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use our services</a>.
 Google's own privacy policy is available at
@@ -61,14 +81,21 @@ It is handled by Google in accordance with its
 <p>The app uses an internet connection only to load advertisements and send crash reports.
 All cadence tracking and run-history functionality works offline.</p>
 
+<h2>Deleting your data</h2>
+<p>You can delete individual runs from the run history inside the app. Uninstalling the app
+removes the run history and settings stored on your device. If Android backup included them,
+that copy is in your own Google account — you can remove it from your device's backup
+settings or from Google Drive. Because the developer never receives your data, there is
+nothing on our side to delete.</p>
+
 <h2>Children</h2>
 <p>The app is not directed at children under the age of 13 and does not knowingly collect
 personal information from children.</p>
 
 <h2>Data sharing and selling</h2>
-<p>The developer does not sell or share any personal data. The app stores your runs only on
-your device. Ad-related and crash-diagnostic data is handled solely by Google as described
-above.</p>
+<p>The developer does not collect, sell, or share your personal data. Ad-related and
+crash-diagnostic data is processed by Google as described above, under Google's own
+policies.</p>
 
 <h2>Changes to this policy</h2>
 <p>This policy may be updated from time to time. Any changes will be posted on this page with
@@ -81,21 +108,32 @@ an updated "Last updated" date.</p>
 <hr>
 
 <h1>개인정보처리방침</h1>
-<p class="meta">런트로놈 &middot; 최종 수정일: 2026년 7월 18일</p>
+<p class="meta">런트로놈 &middot; 최종 수정일: 2026년 8월 7일</p>
 
 <p>본 개인정보처리방침은 <strong>런트로놈</strong> 앱("본 앱")이 정보를 어떻게 처리하는지
 설명합니다. 런트로놈은 안드로이드 휴대폰 및 Wear OS 워치용 무료 광고 지원 러닝 케이던스 앱입니다.
 계정·가입·로그인이 없습니다.</p>
 
 <h2>앱이 수집하는 정보</h2>
-<p>본 앱은 개인 러닝 데이터를 개발자에게 수집·업로드·전송하지 <strong>않습니다</strong>. 목표
-케이던스, 설정, 기록한 케이던스 세션은 <strong>기기에만 저장</strong>되며, 페어링된 워치를 쓰는
-경우 폰과 워치 간에 직접 주고받습니다. 개발자나 개발자가 관리하는 서버로 전송되지 않습니다. 본 앱은
-위치 권한을 요청하지 않으며 GPS 경로나 거리를 기록하지 않습니다.</p>
+<p>계정이 없으며, <strong>개발자는 사용자의 러닝 데이터를 받지 않습니다</strong>. 목표 케이던스,
+설정, 기록한 케이던스 세션은 사용자가 기기에서 만들고 기기에 저장됩니다. 본 앱은 위치 권한을
+요청하지 않으며 GPS 경로나 거리를 기록하지 않습니다.</p>
+<p>이 데이터가 기기를 떠나는 경우는 두 가지이며, 어느 쪽도 개발자에게 오지 않습니다.</p>
+<ul>
+<li><strong>페어링된 워치.</strong> 페어링된 Wear OS 워치를 쓰는 경우 러닝 설정과 진행 중인 러닝
+상태가 Google Play 서비스를 통해 폰과 워치 사이에서 직접 오갑니다. 양쪽이 같은 러닝을 표시하기
+위해서입니다.</li>
+<li><strong>Android 백업.</strong> Android 백업을 켜 두었다면 설정과 러닝 기록 데이터베이스가 사용자
+본인의 Google 계정에 보관되는 백업에 포함되어, 새 휴대폰을 설정할 때 이력이 그대로 돌아옵니다. 이
+백업은 기기 설정에서 사용자가 직접 관리합니다. 워치 앱 자체는 아무것도 백업하지 않습니다.</li>
+</ul>
 
-<h2>동작 센서</h2>
-<p>러닝 케이던스(분당 걸음 수)를 측정하기 위해 본 앱은 기기의 동작 센서(가속도 센서 등)를 읽습니다. 이
-센서 데이터는 기기에서 실시간으로 처리되며 개인정보로 저장되거나 전송되지 않습니다.</p>
+<h2>동작 센서와 신체 활동</h2>
+<p>러닝 케이던스(분당 걸음 수)를 측정하기 위해 본 앱은 기기의 동작 센서 — 가속도 센서, 그리고 지원되는
+기기에서는 시스템 걸음 감지기 — 를 읽습니다. 걸음 감지기를 쓰려면 Android의 <strong>신체 활동</strong>
+권한이 필요하며, 걸음 감지기 방식을 선택했거나 방식 비교를 켠 상태로 러닝을 시작할 때 권한을 요청합니다.
+가속도 센서 방식은 권한이 필요하지 않습니다. 센서 데이터는 기기에서 실시간으로 처리되며, 러닝 기록에는
+계산된 케이던스 값만 저장되고 센서 원시값은 저장되거나 전송되지 않습니다.</p>
 
 <h2>광고</h2>
 <p>본 앱은 <strong>Google AdMob</strong>을 사용해 광고를 표시합니다: 배너(러닝 중이 아닐 때), 러닝 이력
@@ -103,7 +141,10 @@ an updated "Last updated" date.</p>
 광고가 표시되지 않습니다. 광고 제공을 위해 Google 모바일 광고 SDK는 Google 정책에 따라 기기 식별자,
 대략적인(정밀하지 않은) 위치 등 일부 데이터를 수집·처리할 수 있습니다. 이 데이터는 본 앱 개발자가 아니라
 Google이 처리합니다. 보상형 광고는 전적으로 선택 사항이며, 시청하지 않아도 앱의 모든 기능을 사용할 수
-있습니다.</p>
+있습니다. 필요한 지역(예: 유럽 경제 지역 및 영국)에서는 광고를 불러오기 전에 사용자의 동의를 먼저
+요청합니다. 이 동의 창에는 "정밀 위치정보 사용"이 별도 항목으로 제시되며, 이 항목은 기본적으로
+<strong>꺼져 있고</strong> 사용자가 직접 켰을 때만 적용됩니다. 이 동의가 적용되는 지역에서는 앱 설정
+화면에 동의 항목을 다시 고를 수 있는 항목이 제공됩니다.</p>
 <p>Google의 데이터 사용 방식은
 <a href="https://policies.google.com/technologies/partner-sites">여기</a>에서, Google
 개인정보처리방침은 <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>
@@ -120,12 +161,18 @@ Google이 처리합니다.</p>
 <p>본 앱은 광고를 불러오거나 충돌 보고서를 전송할 때만 인터넷에 연결합니다. 케이던스 측정과 러닝 기록
 기능은 오프라인에서 동작합니다.</p>
 
+<h2>데이터 삭제</h2>
+<p>앱 안의 러닝 이력에서 개별 러닝을 삭제할 수 있습니다. 앱을 삭제하면 기기에 저장된 러닝 이력과
+설정이 함께 지워집니다. Android 백업에 포함되어 있었다면 그 사본은 사용자 본인의 Google 계정에 있으며,
+기기의 백업 설정이나 Google 드라이브에서 삭제할 수 있습니다. 개발자는 사용자의 데이터를 받지 않으므로
+개발자 측에서 삭제할 것은 없습니다.</p>
+
 <h2>아동</h2>
 <p>본 앱은 만 13세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 고의로 수집하지 않습니다.</p>
 
 <h2>데이터 공유 및 판매</h2>
-<p>개발자는 개인정보를 판매하거나 공유하지 않습니다. 본 앱은 러닝 기록을 기기에만 저장합니다. 광고 및
-충돌 진단 관련 데이터는 위에 설명한 대로 전적으로 Google이 처리합니다.</p>
+<p>개발자는 사용자의 개인정보를 수집하지도, 판매하지도, 공유하지도 않습니다. 광고 및 충돌 진단 관련
+데이터는 위에 설명한 대로 Google이 자체 정책에 따라 처리합니다.</p>
 
 <h2>방침 변경</h2>
 <p>본 방침은 수시로 업데이트될 수 있으며, 변경 사항은 본 페이지에 "최종 수정일"과 함께 게시됩니다.</p>
