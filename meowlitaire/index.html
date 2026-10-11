@@ -69,7 +69,9 @@ the app stops unexpectedly. A report contains technical details: where in the ap
 happened and the error message, the app's state at that moment, the device model, the operating
 system version, the app version, and installation identifiers created by Firebase. To count how
 many users a crash affects, Firebase also records when the app starts a session, with app and
-device information. The app does not attach your saved games or anything you typed to a report.
+device information. The app also sends a report of the same kind, without stopping, when it meets a saved-data
+state that should not happen, such as a Play Games backup copy it cannot read or game data saved by a newer
+version of the app; that report names only the kind of problem. The app does not attach your saved games or anything you typed to a report.
 The developer reads these reports in the Firebase console to fix bugs; Google processes them under
 its <a href="https://policies.google.com/privacy">privacy policy</a>. Reports are sent encrypted in
 transit, and Firebase keeps crash data for 90 days before starting to remove it
@@ -161,8 +163,9 @@ with an updated "Last updated" date.</p>
 <p>본 앱은 <strong>Firebase Crashlytics</strong>(Google 서비스)를 사용하여, 앱이 예기치 않게 종료되면 충돌
 보고서를 보냅니다. 보고서에는 기술 정보가 담깁니다: 앱 코드의 어느 지점에서 실패했는지와 오류 메시지, 그
 순간의 앱 상태, 기기 모델, 운영체제 버전, 앱 버전, Firebase가 만드는 설치 식별자입니다. 충돌이 몇 명의
-사용자에게 영향을 주는지 세기 위해, Firebase는 앱이 세션을 시작한 시각도 앱·기기 정보와 함께 기록합니다. 앱은
-저장된 게임이나 사용자가 입력한 내용을 보고서에 따로 첨부하지 않습니다. 개발자는 버그를 고치기 위해 Firebase
+사용자에게 영향을 주는지 세기 위해, Firebase는 앱이 세션을 시작한 시각도 앱·기기 정보와 함께 기록합니다. 또한
+읽을 수 없는 Play 게임즈 백업 사본이나 더 새 버전의 앱이 저장한 게임 데이터처럼, 저장 데이터가 일어나면 안 되는
+상태이면 앱은 종료되지 않은 채 같은 종류의 보고서를 보냅니다. 이 보고서에는 문제의 종류만 적힙니다. 앱은 저장된 게임이나 사용자가 입력한 내용을 보고서에 따로 첨부하지 않습니다. 개발자는 버그를 고치기 위해 Firebase
 콘솔에서 이 보고서를 확인하며, Google은 자체 <a href="https://policies.google.com/privacy">개인정보처리방침</a>에
 따라 처리합니다. 보고서는 전송 중 암호화되며, Firebase는 충돌 데이터를 90일 동안 보관한 뒤 삭제 절차를
 시작합니다(<a href="https://firebase.google.com/support/privacy">Firebase 개인정보 안내</a>).</p>
@@ -250,7 +253,10 @@ Google のモバイル広告 SDK は、広告、分析、不正防止のため�
 ときにクラッシュレポートを送信します。レポートには技術情報が含まれます：アプリのコードのどこで失敗したかと
 エラーメッセージ、その時点のアプリの状態、端末のモデル、OS のバージョン、アプリのバージョン、Firebase が作成する
 インストール識別子。クラッシュの影響を受けたユーザー数を数えるため、Firebase はアプリがセッションを開始した
-時刻もアプリと端末の情報とともに記録します。アプリが保存したゲームや入力内容をレポートに別途添付することは
+時刻もアプリと端末の情報とともに記録します。また、読み取れない Play ゲームのバックアップや、より新しいバージョンの
+アプリが保存したゲームデータのように、保存データが起こるはずのない状態にあるときは、アプリは終了せずに同じ種類の
+レポートを送信します。このレポートには問題の
+種類だけが記されます。アプリが保存したゲームや入力内容をレポートに別途添付することは
 ありません。開発者はバグを修正するために Firebase コンソールでレポートを確認し、Google は自社の
 <a href="https://policies.google.com/privacy">プライバシーポリシー</a>に従って処理します。レポートは送信中に
 暗号化され、Firebase はクラッシュデータを 90 日間保管した後に削除処理を開始します
