@@ -63,19 +63,33 @@ those choices later.</p>
 Google's own privacy policy is available at
 <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.</p>
 
+<h2>Crash reports</h2>
+<p>The app uses <strong>Firebase Crashlytics</strong> (a Google service) to send a crash report when
+the app stops unexpectedly. A report contains technical details: where in the app's code the failure
+happened and the error message, the app's state at that moment, the device model, the operating
+system version, the app version, and installation identifiers created by Firebase. To count how
+many users a crash affects, Firebase also records when the app starts a session, with app and
+device information. The app does not attach your saved games or anything you typed to a report.
+The developer reads these reports in the Firebase console to fix bugs; Google processes them under
+its <a href="https://policies.google.com/privacy">privacy policy</a>. Reports are sent encrypted in
+transit, and Firebase keeps crash data for 90 days before starting to remove it
+(<a href="https://firebase.google.com/support/privacy">Firebase privacy information</a>).</p>
+
 <h2>Internet permission</h2>
-<p>The app uses an internet connection to load advertisements and, only if you turn it on, to
-back up and restore your progress with Play Games. Dealing, playing, saving and resuming work
-fully offline.</p>
+<p>The app uses an internet connection to load advertisements, to send crash reports and session
+information and, only if
+you turn it on, to back up and restore your progress with Play Games. Dealing, playing, saving and
+resuming work fully offline.</p>
 
 <h2>Children</h2>
 <p>The app is not directed at children under the age of 13 and does not knowingly collect
 personal information from children.</p>
 
 <h2>Data sharing and selling</h2>
-<p>The developer operates no server, does not receive your personal data and does not sell it.
-The Mobile Ads SDK and, if you turn on Play Games backup, the Play Games services SDK send data
-from your device to Google, which processes it as described above under its own policies.</p>
+<p>The developer operates no server and does not sell any data. Apart from the crash reports
+described above, the developer does not receive data from the app. The Mobile Ads SDK, Firebase
+Crashlytics and, if you turn on Play Games backup, the Play Games services SDK send data from your
+device to Google, which processes it as described above under its own policies.</p>
 
 <h2>Deleting your data</h2>
 <p>There is no account of ours to delete. If you turned on Play Games backup, <em>Settings</em>
@@ -87,7 +101,8 @@ the app, but that leaves any Play Games copy in place. If Android backup include
 copy is part of your device backup in your own Google account; using <em>Delete all data</em> in the
 Google Account dashboard deletes all device and WhatsApp backup data for that Google account, not just
 this app's data
-(<a href="https://support.google.com/android/answer/2819582?hl=en">Google's instructions</a>). Step-by-step instructions:
+(<a href="https://support.google.com/android/answer/2819582?hl=en">Google's instructions</a>). Crash reports
+already sent are kept by Firebase as described in "Crash reports" above. Step-by-step instructions:
 <a href="delete-data/">Account and Data Deletion</a>.</p>
 
 <h2>Changes to this policy</h2>
@@ -142,17 +157,28 @@ with an updated "Last updated" date.</p>
 개인정보처리방침은 <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>
 에서 확인할 수 있습니다.</p>
 
+<h2>충돌 보고서</h2>
+<p>본 앱은 <strong>Firebase Crashlytics</strong>(Google 서비스)를 사용하여, 앱이 예기치 않게 종료되면 충돌
+보고서를 보냅니다. 보고서에는 기술 정보가 담깁니다: 앱 코드의 어느 지점에서 실패했는지와 오류 메시지, 그
+순간의 앱 상태, 기기 모델, 운영체제 버전, 앱 버전, Firebase가 만드는 설치 식별자입니다. 충돌이 몇 명의
+사용자에게 영향을 주는지 세기 위해, Firebase는 앱이 세션을 시작한 시각도 앱·기기 정보와 함께 기록합니다. 앱은
+저장된 게임이나 사용자가 입력한 내용을 보고서에 따로 첨부하지 않습니다. 개발자는 버그를 고치기 위해 Firebase
+콘솔에서 이 보고서를 확인하며, Google은 자체 <a href="https://policies.google.com/privacy">개인정보처리방침</a>에
+따라 처리합니다. 보고서는 전송 중 암호화되며, Firebase는 충돌 데이터를 90일 동안 보관한 뒤 삭제 절차를
+시작합니다(<a href="https://firebase.google.com/support/privacy">Firebase 개인정보 안내</a>).</p>
+
 <h2>인터넷 권한</h2>
-<p>본 앱은 광고를 불러올 때, 그리고 사용자가 켠 경우에만 Play 게임즈로 진행 상황을 백업하고 복원할 때
-인터넷에 연결합니다. 카드 배분, 플레이, 저장과 이어하기는 오프라인에서 모두 동작합니다.</p>
+<p>본 앱은 광고를 불러올 때, 충돌 보고서와 세션 정보를 보낼 때, 그리고 사용자가 켠 경우에만 Play 게임즈로 진행 상황을
+백업하고 복원할 때 인터넷에 연결합니다. 카드 배분, 플레이, 저장과 이어하기는 오프라인에서 모두 동작합니다.</p>
 
 <h2>아동</h2>
 <p>본 앱은 만 13세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 고의로 수집하지 않습니다.</p>
 
 <h2>데이터 공유 및 판매</h2>
-<p>개발자는 서버를 운영하지 않으며, 사용자의 개인정보를 받지도 판매하지도 않습니다. 모바일 광고 SDK와, Play
-게임즈 백업을 켠 경우의 Play 게임즈 서비스 SDK는 사용자의 기기에서 Google로 데이터를 보내며, Google이 위에
-설명한 대로 자체 정책에 따라 처리합니다.</p>
+<p>개발자는 서버를 운영하지 않으며, 어떤 데이터도 판매하지 않습니다. 위에 설명한 충돌 보고서 외에는 앱에서
+데이터를 받지 않습니다. 모바일 광고 SDK, Firebase Crashlytics와, Play 게임즈 백업을 켠 경우의 Play 게임즈
+서비스 SDK는 사용자의 기기에서 Google로 데이터를 보내며, Google이 위에 설명한 대로 자체 정책에 따라
+처리합니다.</p>
 
 <h2>데이터 삭제</h2>
 <p>개발자가 삭제할 자체 계정은 없습니다. Play 게임즈 백업을 켰다면 <em>설정</em> &rarr; <em>백업 지우고
@@ -162,7 +188,7 @@ with an updated "Last updated" date.</p>
 있지만, 이 방법으로는 Play 게임즈의 사본이 지워지지 않습니다. Android 백업에 포함되어 있었다면 그 사본은 사용자 본인의 Google 계정에 있는 기기 백업의 일부입니다.
 Google 계정 대시보드에서 <em>모든 데이터 삭제</em>를 사용하면 이 앱의 데이터만이 아니라 그 Google 계정의 모든
 기기 백업과 WhatsApp 백업 데이터가 삭제됩니다(<a href="https://support.google.com/android/answer/2819582?hl=ko">Google 안내</a>).
-단계별 안내:
+이미 보낸 충돌 보고서는 위 "충돌 보고서"에 적은 대로 Firebase가 보관합니다. 단계별 안내:
 <a href="delete-data/">계정 및 데이터 삭제</a>.</p>
 
 <h2>방침 변경</h2>
@@ -219,18 +245,30 @@ Google のモバイル広告 SDK は、広告、分析、不正防止のため�
 プライバシーポリシーは <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>
 をご覧ください。</p>
 
+<h2>クラッシュレポート</h2>
+<p>本アプリは <strong>Firebase Crashlytics</strong>（Google のサービス）を使用し、アプリが予期せず終了した
+ときにクラッシュレポートを送信します。レポートには技術情報が含まれます：アプリのコードのどこで失敗したかと
+エラーメッセージ、その時点のアプリの状態、端末のモデル、OS のバージョン、アプリのバージョン、Firebase が作成する
+インストール識別子。クラッシュの影響を受けたユーザー数を数えるため、Firebase はアプリがセッションを開始した
+時刻もアプリと端末の情報とともに記録します。アプリが保存したゲームや入力内容をレポートに別途添付することは
+ありません。開発者はバグを修正するために Firebase コンソールでレポートを確認し、Google は自社の
+<a href="https://policies.google.com/privacy">プライバシーポリシー</a>に従って処理します。レポートは送信中に
+暗号化され、Firebase はクラッシュデータを 90 日間保管した後に削除処理を開始します
+（<a href="https://firebase.google.com/support/privacy">Firebase のプライバシー情報</a>）。</p>
+
 <h2>インターネット権限</h2>
-<p>本アプリがインターネットに接続するのは、広告を読み込むときと、ユーザーがオンにした場合に限り
-Play ゲームで進行状況をバックアップ・復元するときです。カードの配布、プレイ、保存、再開はすべて
-オフラインで動作します。</p>
+<p>本アプリがインターネットに接続するのは、広告を読み込むとき、クラッシュレポートとセッション情報を送信するとき、そして
+ユーザーがオンにした場合に限り Play ゲームで進行状況をバックアップ・復元するときです。カードの配布、
+プレイ、保存、再開はすべてオフラインで動作します。</p>
 
 <h2>お子様について</h2>
 <p>本アプリは13歳未満のお子様を対象としておらず、お子様の個人情報を故意に収集することはありません。</p>
 
 <h2>データの共有・販売</h2>
-<p>開発者はサーバーを運用しておらず、ユーザーの個人情報を受け取ることも販売することもありません。
-モバイル広告 SDK と、Play ゲームのバックアップをオンにした場合の Play Games サービス SDK は、端末から
-Google にデータを送信し、Google が上記のとおり自社のポリシーに従って処理します。</p>
+<p>開発者はサーバーを運用しておらず、いかなるデータも販売しません。上記のクラッシュレポートを除き、
+開発者がアプリからデータを受け取ることはありません。モバイル広告 SDK、Firebase Crashlytics、そして
+Play ゲームのバックアップをオンにした場合の Play Games サービス SDK は、端末から Google にデータを送信し、
+Google が上記のとおり自社のポリシーに従って処理します。</p>
 
 <h2>データの削除</h2>
 <p>開発者が削除すべき独自のアカウントはありません。Play ゲームのバックアップをオンにしていた場合は、
@@ -240,7 +278,7 @@ Play ゲームのアカウントにログインした状態で、Play ゲーム�
 Play ゲームのコピーは削除されません。Android のバックアップに含まれていた場合、そのコピーは
 ユーザーご自身の Google アカウントにある端末バックアップの一部です。Google アカウントのダッシュボードで
 <em>すべてのデータを削除</em>を使うと、本アプリのデータだけでなく、その Google アカウントのすべての端末と WhatsApp の
-バックアップデータが削除されます（<a href="https://support.google.com/android/answer/2819582?hl=ja">Google のヘルプ</a>）。手順: <a href="delete-data/">アカウントとデータの削除</a>。</p>
+バックアップデータが削除されます（<a href="https://support.google.com/android/answer/2819582?hl=ja">Google のヘルプ</a>）。送信済みのクラッシュレポートは、上記「クラッシュレポート」のとおり Firebase が保管します。手順: <a href="delete-data/">アカウントとデータの削除</a>。</p>
 
 <h2>ポリシーの変更</h2>
 <p>本ポリシーは随時更新される場合があります。変更内容は「最終更新日」とともに本ページに掲載されます。</p>
